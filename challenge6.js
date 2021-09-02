@@ -2,6 +2,7 @@
 // if n is a squre number, return true otherwise return false
 // from codewars => https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript
 
+// first solution
 const isSquare = function (n) {
   if (n < 0) return false;
   if (n === 0 || n === 1) return true;
@@ -12,4 +13,9 @@ const isSquare = function (n) {
     }
   }
   return false;
+};
+
+// second solution
+constisSquare = function (n) {
+  return Number.parseInt(Math.sqrt(n)) ** 2 === n;
 };
